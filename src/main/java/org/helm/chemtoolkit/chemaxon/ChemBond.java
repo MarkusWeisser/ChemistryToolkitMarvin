@@ -32,7 +32,7 @@ public class ChemBond implements IBondBase {
   private ChemStereoElement stereoElement;
 
   /**
-   * @param arg0
+   * @param bond
    */
   protected ChemBond(MolBond bond) {
     this.bond = bond;
