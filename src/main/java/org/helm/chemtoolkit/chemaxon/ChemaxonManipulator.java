@@ -99,8 +99,8 @@ public class ChemaxonManipulator extends AbstractChemistryManipulator {
 
   /**
    * @param molecule
-   * @return
-   * @throws MolExportException
+ 	 @return molecule in molfile format
+   * @throws MolExportException if the molecule can not be exported into molfile format
    */
   private String molecule2MolFile(Molecule molecule) throws MolExportException {
     molecule.clean(2, null);
@@ -110,10 +110,9 @@ public class ChemaxonManipulator extends AbstractChemistryManipulator {
 
   /**
    * 
-   * @param molecule
-   * @return
-   * @throws CTKException
-   * @throws MolExportException
+   * @param molecule given Molecule
+   * @return molecule in smiles format
+   * @throws MolExportException if the molecule can not be exported into smiles format
    */
   private String molecule2SMILES(Molecule molecule) throws MolExportException {
 
@@ -219,7 +218,7 @@ public class ChemaxonManipulator extends AbstractChemistryManipulator {
    * 
    * @param smiles input data string
    * @return Molecule object
-   * @throws java.io.IOException
+   * @throws java.io.IOException if the input data can not be read
    */
 
   private Molecule getMolecule(String data) throws IOException {
@@ -324,7 +323,7 @@ public class ChemaxonManipulator extends AbstractChemistryManipulator {
   /**
    * {@inheritDoc}
    * 
-   * @throws CTKException
+   * @throws CTKException if the input data is invalid
    */
   @Override
   public IStereoElementBase getStereoInformation(AbstractMolecule molecule, IAtomBase rGroup, IAtomBase atom1,
@@ -345,9 +344,8 @@ public class ChemaxonManipulator extends AbstractChemistryManipulator {
   /**
    * {@inheritDoc}
    * 
-   * @throws CTKException
+   * @throws CTKException if it was not able to export molecule into the desired output format
    * 
-   * @throws MolExportException
    */
   @Override
   public String convertMolecule(AbstractMolecule container, StType type) throws CTKException {

@@ -68,7 +68,7 @@ public class ChemMolecule extends AbstractMolecule {
    * 
    * {@inheritDoc}
    * 
-   * @throws CTKException
+   * @throws CTKException if the atom could not be found in the molecule or the atom is invalid
    */
   @Override
   public void removeINode(IAtomBase node) throws CTKException {
@@ -171,7 +171,7 @@ public class ChemMolecule extends AbstractMolecule {
   /**
    * {@inheritDoc}
    * 
-   * @throws CTKException
+   * @throws CTKException if atom label could not be changed
    */
   @Override
   public void changeAtomLabel(int index, int toIndex) throws CTKException {
@@ -186,7 +186,7 @@ public class ChemMolecule extends AbstractMolecule {
   /**
    * {@inheritDoc}
    * 
-   * @throws CTKException
+   * @throws CTKException if the atom is invalid or the group has more than one single connection to other atom
    */
   @Override
   public boolean isSingleStereo(IAtomBase atom) throws CTKException {

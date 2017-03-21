@@ -32,7 +32,7 @@ public class ChemObject extends CEdge implements IChemObjectBase {
   private static final long serialVersionUID = 6806968748532071493L;
 
   /**
-   * @param arg0
+   * @param arg0 chem object
    */
   protected ChemObject(CEdge arg0) {
     super(arg0);
