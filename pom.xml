@@ -4,7 +4,7 @@
 
 	<groupId>org.pistoiaalliance.helm</groupId>
 	<artifactId>helm2-chemistrytoolkit-marvin</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<packaging>jar</packaging>
 
 
@@ -117,7 +117,7 @@
 		<dependency>
 			<groupId>org.pistoiaalliance.helm</groupId>
 			<artifactId>helm2-chemistrytoolkit</artifactId>
-			<version>1.0.0</version>
+			<version>1.1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>chemaxon</groupId>
